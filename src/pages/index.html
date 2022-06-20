@@ -2,14 +2,18 @@
 layout: default
 ---
 
-<div class="container py-5">
-    <h1 class="text-center mb-4">JZ Real</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="list-group list-group-light">
-                <a href="" class="list-group-item list-group-item-action px-3">First</a>
-            </div>
-        </div>
-    </div>
+<header>
+    {{> menu}}
+</header>
 
-</div>
+<main>
+    {{> sections__hero}}
+    {{> sections__services}}
+    {{> sections__administration}}
+    {{> strips__demo}}
+    {{> sections__pricing}}
+    {{> sections__plugins}}
+    {{> strips__contact-us}}
+    {{> sections__references}}
+    {{> sections__contact}}
+</main>
