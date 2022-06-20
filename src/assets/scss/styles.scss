@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import 'abstracts/main';
+@import 'vendors/main';
+@import 'base/main';
+@import 'layout/main';
+@import 'components/main';
+@import 'pages/main';
+
+
+:root {
+  --c-text: #444;
+}
