@@ -1,0 +1,99 @@
+.pricing-types {
+  .pricing-type {
+    height: 100%;
+    padding: 10px 5px;
+
+    &__inner {
+      padding: 25px 0 0;
+      background-color: #ffffff;
+      box-shadow: 0 0 20px rgba(0,0,0,.1);
+      position: relative;
+      border-radius: 10px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 10px 10px 0 0;
+        @extend %bg-grad;
+        height: 15px;
+        width: 100%;
+      }
+
+      &:hover {
+        box-shadow: 0 0 20px rgba(0,0,0,.2);
+      }
+    }
+
+    &__top {
+      padding: 0 40px 25px;
+      text-align: center;
+      @include media-breakpoint-down(xxl) {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      .img {
+        i {
+          color: $c-primary;
+          font-size: 80px;
+          line-height: 0;
+        }
+      }
+
+      .title {
+        color: $c-primary;
+        margin-bottom: 0;
+      }
+
+      .subtitle {
+        font-size: rem(18px);
+        font-weight: $fw-medium;
+      }
+    }
+
+    &__content {
+      padding: 0 40px 20px;
+      @include media-breakpoint-down(xxl) {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
+
+    &__bottom {
+      @extend %bg-grad;
+      padding: 20px 40px;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+      @include media-breakpoint-down(xxl) {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      .price {
+        font-weight: $fw-bold;
+        font-size: rem(26px);
+      }
+
+      .monthly {
+        font-weight: $fw-medium;
+        color: $c-text;
+      }
+    }
+  }
+}
+
+.price-toggler {
+  @include media-breakpoint-only(xs) {
+    font-size: rem(14px);
+  }
+  .interval {
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+
+    &.active {
+      border-bottom-color: $c-text;
+    }
+  }
+}

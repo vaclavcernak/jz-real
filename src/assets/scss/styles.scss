@@ -1,12 +1,8 @@
 @charset "utf-8";
+@import 'src/assets/fonts/Real/scss/styles';
 @import 'abstracts/main';
 @import 'vendors/main';
 @import 'base/main';
 @import 'layout/main';
 @import 'components/main';
-@import 'pages/main';
-
-
-:root {
-  --c-text: #444;
-}
+@import 'sections/main';

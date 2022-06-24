@@ -1,32 +1,41 @@
-<nav id="mainMenu" class="main-menu container">
-    <a href="" class="logo"><img src="" alt=""></a>
-    <button class="menu-toggler" type="button" aria-label="Toggle navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+<nav id="mainMenu" class="main-menu container-xxl flex-wrap flex-md-nowrap justify-content-between">
+    <a href="/" class="logo navbar-brand p-0 me-2"><img src="/assets/images/logo.svg" alt="jz-real logo"></a>
+    <button id="navbarToggler" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="hamburger"><svg  xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
-        </svg>
+        </svg></div>
+
+        <div class="hamburger--close"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"/></svg></div>
+
+
     <span>Menu</span>
     </button>
-    <div class="main-menu__list-wrapper">
-        <ul class="main-menu__list">
-            <li class="item">
-                <a class="item__link" href="">Úvod</a>
+    <div class="main-menu__list-wrapper collapse navbar-collapse flex-grow-0" id="bdNavbar">
+        <ul class="main-menu__list navbar-nav flex-md-row flex-wrap bd-navbar-nav pt-3 py-md-0 px-2 px-md-0">
+            <li class="navSectionHome nav-item col-auto py-2 py-md-0 mx-md-1 mx-lg-2 mx-xl-3 active">
+                <a class="nav-link py-1 py-md-3 py-lg-4" href="#headerSection">Úvod</a>
             </li>
-            <li class="item">
-                <a class="item__link" href="">Vlastnosti a funkce</a>
+            <li class="navSectionServices nav-item col-auto py-2 py-md-0 mx-md-1 mx-lg-2 mx-xl-3">
+                <a class="nav-link py-1 py-md-3 py-lg-4" href="#servicesSection">Vlastnosti a funkce</a>
             </li>
-            <li class="item">
-                <a class="item__link" href="">Ceník</a>
+            <li class="navSectionPricing nav-item col-auto py-2 py-md-0 mx-md-1 mx-lg-2 mx-xl-3">
+                <a class="nav-link py-1 py-md-3 py-lg-4" href="#pricingSection">Ceník</a>
             </li>
-            <li class="item">
-                <a class="item__link" href="">Reference</a>
+            <li class="navSectionReferences nav-item col-auto py-2 py-md-0 mx-md-1 mx-lg-2 mx-xl-3">
+                <a class="nav-link py-1 py-md-3 py-lg-4" href="#referencesSection">Reference</a>
             </li>
-            <li class="item">
-                <a class="item__link" href="">Vyzkoušet zdarma</a>
+            <li id="" class="nav-item col-auto py-2 py-md-0 mx-md-1 mx-lg-2 mx-xl-3">
+                <a class="nav-link py-1 py-md-3 py-lg-4" href="">Vyzkoušet zdarma</a>
             </li>
-            <li class="item">
-                <a class="item__link" href="">Kontakt</a>
+            <li class="navSectionContact nav-item col-auto py-2 py-md-0 mx-md-1 mx-lg-2 mx-xl-3">
+                <a class="nav-link py-1 py-md-3 py-lg-4" href="#contactSection">Kontakt</a>
             </li>
         </ul>
+        <div class="mobile-menu-contact">
+            <a class="d-inline-block" href="tel:+420608926139">+420 608 926 139</a>
+            <span class="opening-hours d-inline-block mb-2">Po - Pá 9:00 - 17:00</span>
+            <a href="mailto:info@jz-real.cz">info@jz-real.cz</a>
+        </div>
     </div>
 </nav>
 

@@ -8,6 +8,22 @@ $grid-breakpoints: (
         lg: 992px,
         xl: 1200px,
         xxl: 1400px
-) !default;
+);
+
+$grid-gutter-width: 20px;
 
 $rem: 16px;
+
+// font-weight variables
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// Colours
+
+$c-primary: #539b24;
+$c-primary-dark: #78bb35;
+$c-primary-light: #8cc72c;
+$c-text: #242c38;

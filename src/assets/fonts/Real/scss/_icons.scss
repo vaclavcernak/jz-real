@@ -1,0 +1,51 @@
+// Icons
+// -------------------------
+
+.check-circle:before,
+.done:before,
+.home:before,
+.apartment:before,
+.city-buildings:before,
+.forward:before,
+.back:before,
+.done-2:before,
+.menu:before,
+.close:before,
+[data-icons8]:before {
+  @include icons8-font;
+}
+
+[data-icons8]:before {
+  content: attr(data-icons8);
+}
+
+.check-circle:before {
+  content: $icons8-var-check-circle;
+}
+.done:before {
+  content: $icons8-var-done;
+}
+.home:before {
+  content: $icons8-var-home;
+}
+.apartment:before {
+  content: $icons8-var-apartment;
+}
+.city-buildings:before {
+  content: $icons8-var-city-buildings;
+}
+.forward:before {
+  content: $icons8-var-forward;
+}
+.back:before {
+  content: $icons8-var-back;
+}
+.done-2:before {
+  content: $icons8-var-done-2;
+}
+.menu:before {
+  content: $icons8-var-menu;
+}
+.close:before {
+  content: $icons8-var-close;
+}

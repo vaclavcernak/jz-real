@@ -3,37 +3,35 @@ html, body {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
-  font-weight: normal;
-  color: var(--c-text);
+  font-family: 'Rubik', sans-serif;
+  font-weight: $fw-regular;
+  color: $c-text;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: var(--c-primary);
   margin: 0 0 1rem;
-  font-weight: bold;
+  font-weight: $fw-medium;
 }
 
 h1, .h1 {
-  @include fluid-type(20px, 20px);
+  @include fluid-type(rem(27px), rem(36px));
 }
 
 h2, .h2 {
-  @include fluid-type(18px, 26px);
-  text-transform: uppercase;
+  @include fluid-type(rem(26px), rem(36px));
 }
 
 h3, .h3 {
-  @include fluid-type(16px, 22px);
+  @include fluid-type(rem(22px), rem(32px));
 }
 
 h4, .h4 {
-  @include fluid-type(14px, 20px);
+  @include fluid-type(rem(18px), rem(26px));
 }
 
 h5, .h5 {
-  @include fluid-type(12px, 16px);
+  @include fluid-type(16px, 20px);
   text-transform: uppercase;
 }
 

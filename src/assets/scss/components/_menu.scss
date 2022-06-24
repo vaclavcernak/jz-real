@@ -1,0 +1,150 @@
+header.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+  @include media-breakpoint-down(md) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.main-menu {
+  font-size: rem(17px);
+  text-transform: uppercase;
+  @include media-breakpoint-down(xl) {
+    font-size: rem(16px);
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: rem(13px);
+  }
+  @include media-breakpoint-down(md) {
+    font-size: rem(14px);
+    padding: 0 15px;
+  }
+
+  &__list-wrapper {
+    @include media-breakpoint-down(md) {
+      position: fixed;
+      background: #ffffff;
+      width: 100%;
+      left: 0px;
+      top: 46px;
+      padding: 0 15px 10px;
+    }
+  }
+
+  &__list {
+    @include media-breakpoint-down(md) {
+      height: 100vh;
+    }
+  }
+
+  .logo {
+    align-items: center;
+    display: flex;
+    @include media-breakpoint-down(lg) {
+      max-width: 100px;
+    }
+  }
+
+  .nav-item {
+    &.active {
+
+      .nav-link {
+        color: $c-primary;
+        position: relative;
+        &:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 4px;
+          width: 100%;
+          background-color:$c-primary;
+          @include media-breakpoint-down(md) {
+            width: 4px;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-link {
+    color: $c-text;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 15px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $c-primary;
+    }
+  }
+}
+
+.navbar-toggler {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+
+  &:focus {
+    border: 0;
+    box-shadow: none;
+  }
+
+  &:not(.collapsed) {
+    .hamburger--close {
+      display: block;
+    }
+    .hamburger {
+      display: none;
+    }
+  }
+
+  &.collapsed {
+    .hamburger--close {
+      display: none;
+    }
+  }
+
+  svg {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    path {
+      fill: $c-primary;
+    }
+  }
+
+  span {
+    position: relative;
+    top: -1px;
+  }
+}
+
+
+.mobile-menu-contact {
+  display: none;
+  position: fixed;
+  top: calc(100% - 110px);
+  padding: 20px 23px;
+  background: #ffffff;
+  width: 100%;
+  flex-direction: column;
+  text-transform: none;
+
+  .main-menu__list-wrapper.show & {
+    display: flex;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

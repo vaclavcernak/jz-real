@@ -1,0 +1,14 @@
+/*!
+ * Icon Font jz-real
+ * Made with love by Icons8 [ https://icons8.com/ ] using webfont [ https://github.com/itgalaxy/webfont ]
+ *
+ * Contacts:
+ *    [ https://icons8.com/contact ]
+ *
+ * Follow Icon8 on
+ *    Twitter [ https://twitter.com/icons_8 ]
+ *    Facebook [ https://www.facebook.com/Icons8 ]
+ *    Google+ [ https://plus.google.com/+Icons8 ]
+ *    GitHub [ https://github.com/icons8 ]
+ */
+@font-face{font-family:"jz-real";src:url("../fonts/jz-real.eot");src:url("../fonts/jz-real.eot?#iefix")format("embedded-opentype"),url("../fonts/jz-real.woff2")format("woff2"),url("../fonts/jz-real.woff")format("woff"),url("../fonts/jz-real.ttf")format("truetype"),url("../fonts/jz-real.svg#font")format("svg");font-weight:normal;font-style:normal;}@media screen and(-webkit-min-device-pixel-ratio:0){@font-face{font-family:"jz-real";src:url("../fonts/jz-real.svg#jz-real")format("svg");}}[data-icons8]:before{content:attr(data-icons8);}.check-circle:before,.done:before,.home:before,.apartment:before,.city-buildings:before,.forward:before,.back:before,.done-2:before,.menu:before,.close:before,.icons8,[data-icons8]:before{display:inline-block;font-family:"jz-real";font-style:normal;font-weight:normal;font-variant:normal;line-height:1;text-decoration:inherit;text-rendering:optimizeLegibility;text-transform:none;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;}.check-circle:before{content:"\f100";}.done:before{content:"\f101";}.home:before{content:"\f102";}.apartment:before{content:"\f103";}.city-buildings:before{content:"\f104";}.forward:before{content:"\f105";}.back:before{content:"\f106";}.done-2:before{content:"\f107";}.menu:before{content:"\f108";}.close:before{content:"\f109";}

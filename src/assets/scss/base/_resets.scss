@@ -366,4 +366,11 @@ ul, ol, li {
 button {
   background-color: transparent;
   border: none;
+  padding: 0;
+
+  &:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+  }
 }

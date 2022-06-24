@@ -1,0 +1,74 @@
+.references-slider {
+  .item {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+
+    &__logo {
+      flex-shrink: 0;
+      margin-right: 30px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__content {
+      &__bubble {
+        padding: 25px 20px 15px;
+        box-shadow: 0 0 30px rgba(0,0,0,.1);
+        margin-bottom: 20px;
+        @include media-breakpoint-down(lg) {
+          margin: 10px 15px 20px;
+          box-shadow: 0 0 15px rgba(0,0,0,.1);
+        }
+        @include media-breakpoint-down(md) {
+          font-size: rem(14px);
+        }
+      }
+
+      &__bottom {
+        @include media-breakpoint-down(lg) {
+          margin: 25px 15px 30px;
+        }
+      }
+
+      .title {
+        text-transform: uppercase;
+      }
+
+      .name {
+        font-weight: $fw-bold;
+        font-size: rem(18px);
+        @include media-breakpoint-down(sm) {
+          font-size: rem(16px);
+        }
+      }
+
+      .web {
+        display: inline-block;
+        margin-left: 10px;
+        @include media-breakpoint-down(sm) {
+          font-size: rem(14px);
+        }
+      }
+    }
+
+    &__web-img {
+      flex-shrink: 0;
+      margin-left: 40px;
+      max-width: 500px;
+      @include media-breakpoint-down(xxl) {
+        max-width: 400px;
+      }
+      @include media-breakpoint-down(xl) {
+        max-width: 300px;
+      }
+      @include media-breakpoint-down(lg) {
+        margin: 0;
+      }
+    }
+  }
+}

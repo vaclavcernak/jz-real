@@ -1,0 +1,65 @@
+.list-icons {
+  margin: 0;
+  padding: 0;
+  font-size: rem(15px);
+
+  @include media-breakpoint-only(lg) {
+    font-size: rem(14px);
+  }
+
+  @include media-breakpoint-only(xs) {
+    font-size: rem(14px);
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    position: relative;
+    padding-left: 40px;
+    @include media-breakpoint-only(xs) {
+      padding-left: 35px;
+    }
+
+    i {
+      color: $c-primary;
+      font-size: 36px;
+      margin-right: 5px;
+      position: absolute;
+      left: 0;
+      top: -12px;
+      @include media-breakpoint-only(xs) {
+        font-size: 30px;
+        top: -10px;
+      }
+    }
+  }
+}
+
+.check-list {
+  li {
+    display: flex;
+    padding-left: 30px;
+    position: relative;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #e2e2e2;
+    }
+
+    i {
+      color: $c-primary;
+      margin-right: 5px;
+      position: absolute;
+      left: 5px;
+      top: 2px;
+      font-size: 15px;
+    }
+
+    a {
+      &:hover {
+        color: $c-primary;
+      }
+    }
+  }
+}

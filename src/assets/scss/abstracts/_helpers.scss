@@ -61,3 +61,44 @@
 .no-border {
   border: 0 !important;
 }
+
+.bg-grad {
+  @include bg-grad;
+}
+
+%bg-grad {
+  @include bg-grad;
+}
+
+.bg-gray {
+  background-color: #f3f9ef;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
+.highlight-primary {
+  color: $c-primary;
+  font-weight: $fw-medium;
+}
+
+.c-primary {
+  color: $c-primary;
+}
+
+.fw-medium {
+  font-weight: $fw-medium;
+}
+
+.u-link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+    color: $c-primary;
+  }
+}

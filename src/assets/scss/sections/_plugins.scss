@@ -1,0 +1,43 @@
+.plugins {
+  max-width: 1000px;
+  margin: 0 auto;
+  .plugin {
+    margin-bottom: 30px;
+    &__mobile-top {
+      display: flex;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 15px;
+        align-items: center;
+      }
+    }
+
+    &__mobile-bottom {
+      font-size: rem(14px);
+    }
+
+    &__img {
+      margin-right: 30px;
+      flex-shrink: 0;
+      @include media-breakpoint-down(md) {
+        max-width: 100px;
+        margin-right: 15px;
+      }
+    }
+
+    &__text {
+      margin-right: 30px;
+      margin-top: 10px;
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+      }
+    }
+
+    .title {
+      font-size: rem(20px);
+      @include media-breakpoint-down(md) {
+        font-size: rem(15px);
+        margin-bottom: 0;
+      }
+    }
+  }
+}

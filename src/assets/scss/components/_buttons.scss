@@ -1,0 +1,35 @@
+.btn {
+  border-radius: 10px;
+  display: inline-flex;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  border: 1px solid;
+
+  @include media-breakpoint-down(xl) {
+    font-size: rem(14px);
+    padding: 12px 15px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--primary {
+    border-color: $c-text;
+    background-color: $c-text;
+    color: #ffffff;
+    &:hover {
+      color: #ffffff;
+      background-color: lighten($c-text,10%);
+    }
+  }
+
+  &--secondary {
+    border-color: #ffffff;
+    color: #ffffff;
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(255,255,255,.2);
+    }
+  }
+}

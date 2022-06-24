@@ -1,0 +1,64 @@
+.section-hero {
+  position: relative;
+  .hero-wrapper {
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: right 10% center;
+    height: calc(100vh - 70px);
+    max-height: 750px;
+    @include media-breakpoint-down(lg) {
+      max-height: 400px;
+      background-position: right -30% bottom;
+    }
+    @include media-breakpoint-down(sm) {
+      background-size: 80%;
+      max-height: 670px;
+      background-position: right -50px bottom 30px;
+    }
+  }
+
+  .title {
+    line-height: 1.4;
+  }
+
+  .highlight {
+    color: $c-text;
+    background-color: #e5e10a;
+    display: inline-block;
+    padding: 0 5px;
+    font-weight: $fw-medium;
+    line-height: 1;
+  }
+
+  .subtitle {
+    @include fluid-type(rem(16px), rem(20px));
+    .highlight {
+      line-height: 1.2;
+    }
+  }
+
+  .buttons {
+    display: inline-flex;
+    gap: 15px;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .more-arrow {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+
+    a {
+      padding: 10px;
+    }
+  }
+}

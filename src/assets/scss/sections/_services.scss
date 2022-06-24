@@ -1,0 +1,84 @@
+.services {
+
+  .service {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fcfbe3;
+    padding: 20px 20px 10px;
+    color: #425436;
+
+    @include media-breakpoint-down(xl) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    &__top {
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__img {
+      margin-bottom: 20px;
+      text-align: center;
+      @include media-breakpoint-down(sm) {
+        width: 100px;
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 10px;
+      min-height: 75px;
+
+      @include media-breakpoint-down(xl) {
+        min-height: 60px;
+      }
+      @include media-breakpoint-down(lg) {
+        min-height: initial;
+      }
+      @include media-breakpoint-down(sm) {
+        text-align: left;
+        margin-bottom: 0;
+      }
+
+      .title {
+        font-size: rem(20px);
+        color: $c-primary;
+
+        @include media-breakpoint-down(xxl) {
+          font-size: rem(18px);
+        }
+        @include media-breakpoint-down(xl) {
+          font-size: rem(15px);
+        }
+        @include media-breakpoint-down(lg) {
+          font-size: rem(18px);
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: rem(17px);
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__desc {
+      @include media-breakpoint-down(xxl) {
+        font-size: rem(15px);
+      }
+      @include media-breakpoint-down(xl) {
+        font-size: rem(14px);
+      }
+      @include media-breakpoint-down(lg) {
+        font-size: rem(16px);
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: rem(14px);
+      }
+    }
+  }
+}

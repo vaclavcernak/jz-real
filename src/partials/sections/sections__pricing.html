@@ -1,80 +1,120 @@
-<div id="pricingSection" class="section section-pricing">
+<div id="pricingSection" class="section section-pricing pb-3">
     <div class="container">
         <h2 class="section__title">Cena realitního webu</h2>
-        <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur quis veritatis? Architecto, distinctio dolor ducimus eum ex exercitationem facilis fugiat ipsum magnam perspiciatis possimus quo, similique sint sit totam.</p>
-        <div class="price-toggler">Měsíční platba X roční platba</div>
+        <p class="section__subtitle" style="max-width: 800px;">Váš vlastní realitní web můžete mít již <span class="highlight-primary">od 590 Kč měsíčně</span>.  Na výběr máte z několika hotových šablon nebo vám připravíme grafickou podobu webu kompletně na míru.</p>
+
+        <div class="price-toggler d-flex justify-content-center mb-4">
+            <div class="form-check form-switch d-flex align-items-center ps-0">
+                <label for="paymentToggler" class="interval active">měsíční platba</label>
+                <input id="paymentToggler" class="form-check-input mx-2" type="checkbox">
+                <label for="paymentToggler" class="interval d-inline-block me-2">roční platba</label><span class="c-primary d-inline-block">(sleva 10%)</span>
+            </div>
+        </div>
 
         <div class="pricing-types">
+            <div class="row justify-content-center">
 
-            <div class="pricing-type">
-                <div class="pricing-type__top">
-                    <div class="img"></div>
-                    <div class="heading">
-                        <h3 class="title">do 100 realit</h3>
-                        <span class="subtitle">+1 GB prostoru</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-type">
+                        <div class="pricing-type__inner">
+                            <div class="pricing-type__top">
+                                <div class="img"><i class="home"></i></div>
+                                <div class="heading">
+                                    <h3 class="title">do 100 realit</h3>
+                                    <span class="subtitle">+1 GB prostoru</span>
+                                </div>
+                            </div>
+                            <div class="pricing-type__content">
+                                <ul class="check-list">
+                                    <li class="item"><i class="done-2"></i><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>ZKOUŠKA MODALU</strong></a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Správa realitních nabídek</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Systém pro správu obsahu (CMS) </a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Strukturované parametry nemovitostí</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Multiadministrátorské prostředí</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Webová responzivní prezentace</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Webhosting a technická podpora</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Cookies lišta</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">GDPR ready</a></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-type__bottom">
+                                <div class="price-wrapper"><span class="price"><span id="price-1" class="payment-value">590</span> Kč</span> <span class="monthly">/ <span class="interval-name">měsíc</span><span class="interval-name" style="display: none;">rok</span></span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="pricing-type__content">
-                    <ul class="check-list">
-                        <li class="item">Databáze makléřů</li>
-                        <li class="item">Databáze makléřů</li>
-                        <li class="item">Databáze makléřů</li>
-                    </ul>
-                </div>
-                <div class="pricing-type__bottom">
-                    <div class="price">590 Kč <span class="monhtly">/ měsíc</span></div>
-                </div>
-            </div>
 
-            <div class="pricing-type">
-                <div class="pricing-type__top">
-                    <div class="img"></div>
-                    <div class="heading">
-                        <h3 class="title">do 500 realit</h3>
-                        <span class="subtitle">+10 GB prostoru</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-type">
+                        <div class="pricing-type__inner">
+                            <div class="pricing-type__top">
+                                <div class="img"><i class="apartment"></i></div>
+                                <div class="heading">
+                                    <h3 class="title">do 500 realit</h3>
+                                    <span class="subtitle">+10 GB prostoru</span>
+                                </div>
+                            </div>
+                            <div class="pricing-type__content">
+                                <ul class="check-list">
+                                    <li class="item"><i class="done-2"></i><a href="">Databáze makléřů</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Správa realitních nabídek</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Systém pro správu obsahu (CMS) </a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Strukturované parametry nemovitostí</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Multiadministrátorské prostředí</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Webová responzivní prezentace</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Webhosting a technická podpora</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Cookies lišta</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">GDPR ready</a></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-type__bottom">
+                                <div class="price-wrapper"><span class="price"><span id="price-2" class="payment-value">790</span> Kč</span> <span class="monthly">/ <span class="interval-name">měsíc</span><span class="interval-name" style="display: none;">rok</span></span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="pricing-type__content">
-                    <ul class="check-list">
-                        <li class="item">Databáze makléřů</li>
-                        <li class="item">Databáze makléřů</li>
-                        <li class="item">Databáze makléřů</li>
-                    </ul>
-                </div>
-                <div class="pricing-type__bottom">
-                    <div class="price">790 Kč <span class="monhtly">/ měsíc</span></div>
-                </div>
-            </div>
 
-            <div class="pricing-type">
-                <div class="pricing-type__top">
-                    <div class="img"></div>
-                    <div class="heading">
-                        <h3 class="title">na míru</h3>
-                        <span class="subtitle">prostor dle potřeby</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-type">
+                        <div class="pricing-type__inner">
+                            <div class="pricing-type__top">
+                                <div class="img"><i class="city-buildings"></i></div>
+                                <div class="heading">
+                                    <h3 class="title">na míru</h3>
+                                    <span class="subtitle">prostor dle potřeby</span>
+                                </div>
+                            </div>
+                            <div class="pricing-type__content">
+                                <ul class="check-list">
+                                    <li class="item"><i class="done-2"></i><a href="">Databáze makléřů</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Správa realitních nabídek</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Systém pro správu obsahu (CMS) </a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Strukturované parametry nemovitostí</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Multiadministrátorské prostředí</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Webová responzivní prezentace</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Webhosting a technická podpora</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">Cookies lišta</a></li>
+                                    <li class="item"><i class="done-2"></i><a href="">GDPR ready</a></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-type__bottom">
+                                <div class="price-wrapper"><span class="price">individuálně</span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="pricing-type__content">
-                    <ul class="check-list">
-                        <li class="item">Databáze makléřů</li>
-                        <li class="item">Databáze makléřů</li>
-                        <li class="item">Databáze makléřů</li>
-                    </ul>
-                </div>
-                <div class="pricing-type__bottom">
-                    <div class="price">individuálně</div>
-                </div>
+
             </div>
 
         </div>
 
-        <div class="pricing-note">
+        <div class="pricing-note small text-end me-2 mt-1">
             <p>Uvedené ceny jsou bez DPH.</p>
         </div>
 
-        <div class="bottom-note">
-            <p class="bigger">Instalační poplatek <span class="c-green">+ 2 990 Kč bez DPH</span> jednorázově.</p>
-            <p class="smaller"><a href="">Co je součástí instalatčního poplatku?</a></p>
+        <div class="bottom-note text-center">
+            <p class="p-0 mb-1 fs-5">Instalační poplatek <span class="c-primary fw-medium">+ 2 990 Kč bez DPH</span> jednorázově.</p>
+            <p class="p-0"><a href="" class="c-primary u-link">Co je součástí instalatčního poplatku?</a></p>
         </div>
     </div>
 </div>

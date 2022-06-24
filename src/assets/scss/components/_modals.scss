@@ -1,0 +1,49 @@
+.modal {
+  .modal-content {
+    border-radius: 15px;
+  }
+
+  .modal-header {
+    border: 0;
+    padding: 30px 45px 10px 30px;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+      padding-left: 20px;
+    }
+  }
+
+  .modal-title {
+    text-transform: none;
+    color: $c-primary;
+    font-weight: $fw-medium;
+    font-size: rem(24px);
+    @include media-breakpoint-down(lg) {
+      font-size: rem(22px);
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: rem(20px);
+    }
+  }
+
+  .btn-close {
+    background: none;
+    color: $c-primary;
+    font-size: 26px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .modal-body {
+    padding: 10px 30px 15px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: rem(15px);
+    }
+  }
+}

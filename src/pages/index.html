@@ -2,18 +2,28 @@
 layout: default
 ---
 
-<header>
-    {{> menu}}
-</header>
+{{> header}}
 
 <main>
-    {{> sections__hero}}
-    {{> sections__services}}
-    {{> sections__administration}}
-    {{> strips__demo}}
-    {{> sections__pricing}}
-    {{> sections__plugins}}
-    {{> strips__contact-us}}
-    {{> sections__references}}
-    {{> sections__contact}}
+    <section id="navSectionHome" class="nav-section">
+        {{> sections__hero}}
+    </section>
+    <section id="navSectionServices" class="nav-section">
+        {{> sections__services}}
+        {{> sections__administration}}
+        {{> strips__demo}}
+    </section>
+    <section id="navSectionPricing" class="nav-section">
+        {{> sections__pricing}}
+        {{> sections__plugins}}
+        {{> strips__contact-us}}
+    </section>
+    <section id="navSectionReferences" class="nav-section">
+        {{> sections__references}}
+    </section>
+    <section id="navSectionContact" class="nav-section">
+        {{> sections__contact}}
+    </section>
 </main>
+
+{{> modal}}

@@ -1,47 +1,51 @@
 <div id="contactSection" class="section section-contact">
     <div class="container">
-        <div class="contact-form">
-            <h2 class="title">Chcete váš vlastní realitní web?</h2>
-            <p class="subtitle">Požádejte o nezávaznou prezentaci zdarma.</p>
-            <form action="">
-                <div class="form-row">
-                    <label for="name" class="col-form-label">Jméno: <span class="required-icon">*</span></label>
-                    <div class="col-input">
-                        <input type="text"  class="form-control" id="name" required>
+        <div class="contact-form bg-grad">
+            <div class="contact-form__inner">
+                <h2 class="title">Chcete váš vlastní realitní web?</h2>
+                <p class="subtitle">Požádejte o nezávaznou prezentaci zdarma.</p>
+                <form action="" class="col-lg-7 mx-auto mt-3 mt-md-5">
+                    <div class="mb-3 row">
+                        <label for="name" class="col-sm-3 col-form-label text-sm-end text-start">Jméno: <span class="required-icon">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name">
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-row">
-                    <label for="email" class="col-form-label">E-mail: <span class="required-icon">*</span></label>
-                    <div class="col-input">
-                        <input type="email"  class="form-control" id="email" required>
+                    <div class="mb-3 row">
+                        <label for="email" class="col-sm-3 col-form-label text-sm-end text-start">E-mail: <span class="required-icon">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="email"  class="form-control" id="email" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-row">
-                    <label for="phone" class="col-form-label">Telefon: <span class="required-icon">*</span></label>
-                    <div class="col-input">
-                        <input type="text"  class="form-control" id="phone" required>
+                    <div class="mb-3 row">
+                        <label for="phone" class="col-sm-3 col-form-label text-sm-end text-start">Telefon: <span class="required-icon">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="text"  class="form-control" id="phone" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-row">
-                    <label for="message" class="col-form-label">Vás vzkaz:</label>
-                    <div class="col-input">
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    <div class="mb-3 mb-md-4 row">
+                        <label for="message" class="col-sm-3 col-form-label text-sm-end text-start label-no-req">Vás vzkaz:</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-row">
-                    <div class="col-form-label"></div>
-                    <div class="col-input">
-                        <p class="gdpr">Odesláním souhlasíte se <a href="">zpracováním osobních údajů</a></p>
+                    <div class="mb-2 row">
+                        <div class="col-sm-11 text-sm-end text-start">
+                            <p class="gdpr">Odesláním souhlasíte se <a href="" data-bs-toggle="tooltip" title="Text nápovědy pro GDPR">zpracováním osobních údajů</a></p>
+                        </div>
                     </div>
-                </div>
 
-                <input class="form-button" type="submit" value="Odeslat">
-            </form>
+                    <div class="mb-2 row">
+                        <div class="col-sm-11 d-flex justify-content-end">
+                            <input class="form-button" type="submit" value="Odeslat">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-
     </div>
 </div>

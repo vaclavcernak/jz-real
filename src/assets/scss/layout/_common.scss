@@ -1,0 +1,28 @@
+.section {
+  scroll-margin-top: 68px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-down(lg) {
+    scroll-margin-top: 46px;
+    padding-top: 30px;
+  }
+  @include media-breakpoint-down(md) {
+    scroll-margin-top: 58px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: rem(18px);
+    max-width: 1000px;
+    margin: 0 auto 30px;
+  }
+}
