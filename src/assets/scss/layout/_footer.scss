@@ -1,0 +1,55 @@
+.footer {
+  background-color: $c-text;
+  color: #ffffff;
+
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__logo {
+    img {
+      max-width: 170px;
+    }
+  }
+
+  .title {
+    @include media-breakpoint-down(sm) {
+      font-size: rem(22px);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__info {
+    @include media-breakpoint-down(sm) {
+      font-size: rem(14px);
+    }
+  }
+
+  &__bottom {
+    @include media-breakpoint-down(md) {
+     font-size: rem(14px);
+    }
+  }
+
+  .footer-nav {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+    }
+  }
+}

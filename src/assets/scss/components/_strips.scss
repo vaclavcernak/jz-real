@@ -8,6 +8,6 @@
   }
 
   &__subtitle {
-    font-size: rem(22px);
+    @include fluid-type(rem(18px), rem(22px));
   }
 }

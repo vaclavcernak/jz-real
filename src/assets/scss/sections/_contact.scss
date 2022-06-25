@@ -1,17 +1,53 @@
 .contact-form {
-  border-radius: 15px;
+  border-radius: 10px;
   color: #ffffff;
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+
   @include media-breakpoint-down(sm) {
     height: 700px;
   }
 
+  &:before {
+    @include real-icon;
+    content: "\f104";
+    font-size: 350px;
+    position: absolute;
+    bottom: -20px;
+    left: -100px;
+    color: #67ac2c;
+    @include media-breakpoint-down(lg) {
+      font-size: 250px;
+      left: -50px
+    }
+  }
+
+  &:after {
+    @include real-icon;
+    content: "\f102";
+    font-size: 350px;
+    position: absolute;
+    bottom: -30px;
+    right: -100px;
+    color: #67ac2c;
+    @include media-breakpoint-down(lg) {
+      font-size: 280px;
+      right: -70px
+    }
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
   &__inner {
     padding: 30px;
+    position: relative;
+    z-index: 1;
     @include media-breakpoint-down(md) {
       padding: 20px 15px;
     }
@@ -71,5 +107,9 @@
     color: #ffffff;
     padding: 15px 30px;
     text-transform: uppercase;
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(255,255,255,.2);
+    }
   }
 }
