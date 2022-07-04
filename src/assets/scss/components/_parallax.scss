@@ -1,0 +1,52 @@
+.parallax-row {
+  @media screen and (max-width: 1500px) {
+    display: none;
+  }
+  .item {
+    position: absolute;
+    box-shadow: 0 0 40px rgba(0,0,0,.4);
+    border-radius: 5px;
+    &--yellow {
+      background-color: #e5e012;
+    }
+    &--green {
+      background-color: #8dc660;
+    }
+
+    &--1 {
+      opacity: .1;
+      width: 10rem;
+      height: 10rem;
+      margin-top: -25em;
+      margin-left: 1em;
+    }
+    &--2 {
+      opacity: .15;
+      width: 12rem;
+      height: 10rem;
+      margin-top: -13em;
+      margin-left: -17em;
+    }
+    &--3 {
+      opacity: .2;
+      width: 20rem;
+      height: 15rem;
+      margin-top: -11em;
+      margin-left: -3em;
+    }
+    &--4 {
+      opacity: .15;
+      width: 20rem;
+      height: 17rem;
+      margin-top: 0em;
+      margin-left: 10em;
+    }
+    &--5 {
+      opacity: .3;
+      width: 15rem;
+      height: 11rem;
+      margin-top: 6em;
+      margin-left: -10em;
+    }
+  }
+}

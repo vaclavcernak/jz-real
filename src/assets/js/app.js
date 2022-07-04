@@ -2,6 +2,8 @@ import {Tooltip, Modal} from 'bootstrap';
 import LazyLoad from 'vanilla-lazyload'; // https://github.com/verlok/vanilla-lazyload
 import { CountUp } from 'countup.js';
 import { tns } from "tiny-slider";
+import AOS from 'aos';
+import Rellax from 'rellax';
 
 // vanilla-lazyload
 let lazyLoadInstance = new LazyLoad();
@@ -12,6 +14,17 @@ let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new Tooltip(tooltipTriggerEl)
 })
+
+AOS.init({
+    delay: 100, // values from 0 to 3000, with step 50ms
+    duration: 1000, // values from 0 to 3000, with step 50ms
+    once: true, // whether animation should happen only once - while scrolling down
+
+    disable: function() {
+        let maxWidth = 768;
+        return window.innerWidth < maxWidth;
+    }
+});
 
 // mobile menu
 function collapseMenu() {
@@ -29,13 +42,13 @@ menuToggler.addEventListener("click", collapseMenu);
 
 // menu active links when scrolling
 function menuActiveLinks() {
-    const sections = document.querySelectorAll(".nav-section");
-    const navLi = document.querySelectorAll("#mainMenu .nav-item");
+    let sections = document.querySelectorAll(".nav-section");
+    let navLi = document.querySelectorAll("#mainMenu .nav-item");
     window.onscroll = () => {
         var current = "";
 
         sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
+            let sectionTop = section.offsetTop;
             if (pageYOffset >= sectionTop - 70) {
                 current = section.getAttribute("id"); }
         });
@@ -95,7 +108,7 @@ paymentToggle();
 function animateCalculation (target, params) {
 
     // Prepare object for counting price
-    var counter = new CountUp(target, params.to, { startVal: params.from });
+    let counter = new CountUp(target, params.to, { startVal: params.from });
 
     // Animate calculation
     counter.start();
@@ -103,7 +116,7 @@ function animateCalculation (target, params) {
 
 
 // References slider
-var slider = tns({
+let slider = tns({
     container: '.tns-references',
     items: 1,
     slideBy: 'page',
@@ -115,3 +128,17 @@ var slider = tns({
     navPosition: 'bottom',
     controlsText: ['<i class="back"></i>', '<i class="forward"></i>'],
 });
+
+// conatct form fliping
+
+$(function(){
+    // Backbone code in here
+    let form = $('#contactForm');
+    form.submit(function (e){
+        e.preventDefault();
+        form.parents(".flip-card").toggleClass('flipped');
+    })
+});
+
+// parallax rellax library
+var rellax = new Rellax('.rellax');
