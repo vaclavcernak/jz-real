@@ -23,10 +23,17 @@
     &__img {
       margin-bottom: 20px;
       text-align: center;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+
       @include media-breakpoint-down(sm) {
-        width: 100px;
+        width: 60px;
         margin-right: 20px;
         margin-bottom: 0;
+        height: auto;
       }
     }
 

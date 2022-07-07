@@ -18,8 +18,13 @@
     &__img {
       margin-right: 30px;
       flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
       @include media-breakpoint-down(md) {
-        max-width: 100px;
+        height: 60px;
+        width: 60px;
         margin-right: 15px;
       }
     }
