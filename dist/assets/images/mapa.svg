@@ -1,14 +1,15 @@
+
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="201" viewBox="0 0 197 201">
   <defs>
     <style>
       .cls-1, .cls-2 {
-        fill: #fffff5;
-        fill-rule: evenodd;
+      fill: #fffff5;
+      fill-rule: evenodd;
       }
 
       .cls-2 {
-        stroke: #fffff5;
-        stroke-width: 8px;
+      stroke: #fffff5;
+      stroke-width: 8px;
       }
     </style>
   </defs>
